@@ -25,7 +25,7 @@ public class Record : MonoBehaviour
     void OnEnable()
     {
         ScoreManager record = ScoreManager.scoreManager;
-
+            
         recordText.text =
             "Record : \n" +
             "Player 1\t\t\t" + record.P1_winNumber + " Wins\n" +

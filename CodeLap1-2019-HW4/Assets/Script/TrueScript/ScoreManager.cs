@@ -40,13 +40,7 @@ public class ScoreManager : MonoBehaviour
 
         string recordFile = Application.dataPath + GAME_RECORD;
 
-        if (!File.Exists(recordFile))
-        {
-            string output = "0";
-            
-            File.WriteAllText(recordFile,output);
-        }
-        else
+        if (File.Exists(recordFile))
         {
             //ini everything from saved record
             string RecordFileText = File.ReadAllText(recordFile);
