@@ -79,7 +79,7 @@ public class StarSpawner : MonoBehaviour
 
     public void resetSpawner()
     {
-        starCount.totalStar = 0;
+        starCount.totalStar = 1;
         starCount.starGathered = 0;
         times.maxSpawn = maxSpawnForReset;
     }

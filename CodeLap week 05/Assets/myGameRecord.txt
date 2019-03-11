@@ -1,0 +1,1 @@
+P1 0 P2 14 Draw 0 HighScore 10 HighScoreWinner Player

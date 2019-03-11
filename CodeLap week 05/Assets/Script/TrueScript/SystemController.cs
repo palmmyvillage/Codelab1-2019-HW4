@@ -197,7 +197,7 @@ public class SystemController : MonoBehaviour
             //resume time
             Time.timeScale = 1.0f;
             //toggle pause game panel
-            endPanel.SetActive(!endPanel.activeInHierarchy);
+            endPanel.SetActive(false);
         }
     }
 
@@ -228,6 +228,8 @@ public class SystemController : MonoBehaviour
                 winner.color = winnerTextColor[2].winningText;
             }
             systemController.endGameEnter();
+            
+            ScoreManager.scoreManager.setHighScore();
         }
     }
     

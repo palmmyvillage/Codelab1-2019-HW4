@@ -672,7 +672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 177, y: -88.00002}
+  m_AnchoredPosition: {x: -7.2433434, y: -87.88942}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &588088147
@@ -985,6 +985,100 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735884722}
+  m_CullTransparentMesh: 0
+--- !u!1 &758082214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758082215}
+  - component: {fileID: 758082218}
+  - component: {fileID: 758082217}
+  - component: {fileID: 758082216}
+  m_Layer: 5
+  m_Name: Record
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &758082215
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758082214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1833888238}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 250.09454, y: -107.00206}
+  m_SizeDelta: {x: 225.8, y: 108.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &758082216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758082214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51bfcad01351424a8592323207ff00e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordText: {fileID: 758082217}
+--- !u!114 &758082217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758082214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1.2
+  m_Text: "Record :\nPlayer 1\t\t\t0 Wins\nPlayer 2\t\t\t0 Wins\nDraws\t\t\t\t0\nHigh
+    Score\t\t0"
+--- !u!222 &758082218
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758082214}
   m_CullTransparentMesh: 0
 --- !u!1 &839440310
 GameObject:
@@ -2055,8 +2149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.3, y: -69.02198}
-  m_SizeDelta: {x: 292.9, y: 30}
+  m_AnchoredPosition: {x: 2.1641147, y: -72.53071}
+  m_SizeDelta: {x: 292.9, y: 38.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574046788
 MonoBehaviour:
@@ -2091,7 +2185,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: press [2] to play GEAR LEVEL
+  m_Text: 'press [2] to play
+
+    GEAR LEVEL'
 --- !u!222 &1574046789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2210,7 +2306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184, y: -88}
+  m_AnchoredPosition: {x: -203.83041, y: -87.88942}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644732571
@@ -2302,6 +2398,11 @@ MonoBehaviour:
   - name: Player2
     currentScore: 0
     storedScore: 0
+  P1_winNumber: 0
+  P2_winNumber: 0
+  drawNumber: 0
+  highScoreWinner_record: 
+  highScore_record: 0
 --- !u!114 &1694469774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2734,6 +2835,7 @@ RectTransform:
   - {fileID: 1839499338}
   - {fileID: 1644732570}
   - {fileID: 588088146}
+  - {fileID: 758082215}
   m_Father: {fileID: 272357454}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3041,8 +3143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6340637, y: -69.021736}
-  m_SizeDelta: {x: 292.9, y: 30}
+  m_AnchoredPosition: {x: 0.4981658, y: -72.53072}
+  m_SizeDelta: {x: 292.9, y: 38.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993262021
 MonoBehaviour:
@@ -3077,7 +3179,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: press [1] to play FOREST LEVEL
+  m_Text: 'press [1] to play
+
+    FOREST LEVEL'
 --- !u!222 &1993262022
 CanvasRenderer:
   m_ObjectHideFlags: 0
