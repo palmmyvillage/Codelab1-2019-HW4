@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -36,18 +37,27 @@ public class ScoreManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
-        
-        //ini everything from saved record
-        string RecordFileText = File.ReadAllText(Application.dataPath + GAME_RECORD);
 
-        string[] recordSplit =RecordFileText.Split(' ');
-        
-        P1_winNumber = Int32.Parse(recordSplit[1]);
-        P2_winNumber = Int32.Parse(recordSplit[3]);
-        drawNumber = Int32.Parse(recordSplit[5]);
-        highScore_record = Int32.Parse(recordSplit[7]);
-        highScoreWinner_record = recordSplit[9];
+        string recordFile = Application.dataPath + GAME_RECORD;
+
+        if (!File.Exists(recordFile))
+        {
+            string output = "0";
+            
+            File.WriteAllText(recordFile,output);
+        }
+        else
+        {
+            //ini everything from saved record
+            string RecordFileText = File.ReadAllText(recordFile);
+
+            string[] recordSplit =RecordFileText.Split(' ');
+            P1_winNumber = Int32.Parse(recordSplit[1]);
+            P2_winNumber = Int32.Parse(recordSplit[3]);
+            drawNumber = Int32.Parse(recordSplit[5]);
+            highScore_record = Int32.Parse(recordSplit[7]);
+            highScoreWinner_record = recordSplit[9];   
+        }
     }
 
     public void StoreScore() //use this to score current score in storedScore

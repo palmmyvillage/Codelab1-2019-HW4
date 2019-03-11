@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,6 @@ public class Record : MonoBehaviour
     {
         ScoreManager record = ScoreManager.scoreManager;
 
-        if (File
         recordText.text =
             "Record : \n" +
             "Player 1\t\t\t" + record.P1_winNumber + " Wins\n" +
